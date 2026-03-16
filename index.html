@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shop Diecast 1:64</title>
+<style>
+body{
+font-family: Arial;
+background:#111;
+color:white;
+text-align:center;
+}
+
+h1{
+margin-top:20px;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#1e1e1e;
+padding:15px;
+border-radius:10px;
+width:200px;
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+.price{
+color:#00ff9d;
+font-size:18px;
+margin:10px 0;
+}
+
+button{
+background:#00ff9d;
+border:none;
+padding:10px;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>SHOP DIECAST 1:64</h1>
+
+<div class="container">
+
+<div class="card">
+<img src="https://i.imgur.com/4QfKuz1.jpg">
+<h3>Nissan S15</h3>
+<div class="price">350.000đ</div>
+<button onclick="order('Nissan S15')">Đặt hàng</button>
+</div>
+
+<div class="card">
+<img src="https://i.imgur.com/Ye0H9Gg.jpg">
+<h3>LBWK Lamborghini</h3>
+<div class="price">420.000đ</div>
+<button onclick="order('LBWK Lamborghini')">Đặt hàng</button>
+</div>
+
+<div class="card">
+<img src="https://i.imgur.com/AdK6qVq.jpg">
+<h3>McLaren 720S</h3>
+<div class="price">390.000đ</div>
+<button onclick="order('McLaren 720S')">Đặt hàng</button>
+</div>
+
+</div>
+
+<script>
+function order(car){
+alert("Bạn muốn đặt: " + car + "\nHãy nhắn Messenger cho shop nhé!");
+}
+</script>
+
+</body>
+</html>
